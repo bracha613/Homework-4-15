@@ -1,0 +1,19 @@
+﻿@using Homework_4_15.Web.Models
+@model UploadViewModel
+
+<div class="row">
+	<div class="col-md-8 offset-md-2 bg-light p-4 rounded shadow">
+		<h3>
+			Thank you for uploading your images!
+			Here's the link to share with your friends:
+			<br />
+			<br />
+			<a href="/home/viewimage?id=@Model.Image.Id">
+				https://localhost:7155/home/viewimage?id=@Model.Image.Id
+			</a>
+			<br />
+			<br />
+			Make sure to give them the password of "@Model.Image.Password"
+		</h3>
+	</div>
+</div>
